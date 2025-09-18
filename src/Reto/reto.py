@@ -1,5 +1,5 @@
 import calculos as cd 
-#utilizamos una variable tipo boleana -> una bandera 
+
 control = True
 while control == True: #while true: bucle infinito para salir break
     print( "1. Evalúa si la pista disponible permite el despegue según masa, temperatura y penalización operativa.\n2. Monitoreo de altitud con detección de tendencias y cálculo de parámetros.\n3. Control de presiones de cabina con detección de fallas y cálculo de parámetros.\n4. Salir")
