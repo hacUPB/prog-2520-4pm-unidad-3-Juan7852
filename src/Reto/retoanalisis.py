@@ -3,7 +3,7 @@
 2. Monitoreo de altitud con detección de tendencias y cálculo de parámetros.
 3. Control de presiones de cabina con detección de fallas y cálculo de parámetros.
 4. Salir
-
+#Se uso AI para los enunciados correctos y algo mas complejos 
 ANALISIS 
 1. El programa debe verificar si la longitud de una pista disponible es suficiente para el despegue de un avion, considerando la masa, un ajuste por temperatura y una penalizacion operativa que reduce la pista efectiva.
 
