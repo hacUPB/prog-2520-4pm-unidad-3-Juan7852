@@ -45,7 +45,7 @@ while control == True: #while true: bucle infinito para salir break
             descensos = 0
             alt_min = alt0
             alt_max = alt0 
-            # Comparaciones consecutivas usando la función
+            # Comparaciones consecutivas usando la función, se utilizo AI para ayuda de comparaciones
             ascensos, descensos, alt_min, alt_max = cd.actualizar_contadores_y_extremos(alt0, alt1, ascensos, descensos, alt_min, alt_max)
             ascensos, descensos, alt_min, alt_max = cd.actualizar_contadores_y_extremos(alt1, alt2, ascensos, descensos, alt_min, alt_max)
             ascensos, descensos, alt_min, alt_max = cd.actualizar_contadores_y_extremos(alt2, alt3, ascensos, descensos, alt_min, alt_max)
@@ -80,7 +80,7 @@ while control == True: #while true: bucle infinito para salir break
             p_min = p1
             p_max = p1
             suma  = p1
-            # p1: fuera/racha/extremos
+            # p1: fuera/racha/extremos, se utilizo AI para los diferentes P 
             fuera_total_min, racha_act, racha_max = cd.actualizar_fuera_y_racha(p1, fuera_total_min, racha_act, racha_max)
 
             # ---- p2 ----
