@@ -1,7 +1,7 @@
 '''
-1. Verificar si la longitud de pista disponible es suficiente para el despegue del avión.
-2. Registrar la altitud de vuelo cada 20 minutos durante dos horas y mostrar todas las mediciones al final.
-3. ⁠Registrar la presión de cabina cada 20 minutos durante 2 hora y comprobar en cada medición si se mantiene dentro del rango seguro
+1. Evalúa si la pista disponible permite el despegue según masa, temperatura y penalización operativa.
+2. Monitoreo de altitud con detección de tendencias y cálculo de parámetros.
+3. Control de presiones de cabina con detección de fallas y cálculo de parámetros.
 4. Salir
 
 ANALISIS 
