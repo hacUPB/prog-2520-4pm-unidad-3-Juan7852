@@ -1,4 +1,4 @@
-
+import calculos as cd 
 #utilizamos una variable tipo boleana -> una bandera 
 control = True
 while control == True: #while true: bucle infinito para salir break
@@ -6,10 +6,25 @@ while control == True: #while true: bucle infinito para salir break
     opcion=int(input("ingrese una opcion: "))
     match opcion: 
         case 1: 
-            print("1. patacon con hagao")
-            print("2. yuca con chicharron")
-            print("3. guineo con suero")
-            #opc1= int(input("ingrese su eleccion: "))
+            # Entradas
+            masa = float(input("Ingrese masa [ton]: "))
+            l_disp = float(input("Ingrese longitud disponible de pista [m]: "))
+            deltaT = float(input("Ingrese exceso de temperatura (deltaT) [°C]: "))
+            penal = float(input("Ingrese penalización operativa [m]: "))
+            # Validación
+            if masa <= 0 or l_disp <= 0 or penal <= 0:
+                print("Error en parámetros")
+            else:
+                # Cálculos usando las funciones
+                lreq_base = cd.calc_lreq_base(masa)
+                lreq_aj = cd.calc_lreq_aj(lreq_base, deltaT)
+                leff = cd.calc_leff(l_disp, penal)
+                mensaje = cd.verificar_pista(leff, lreq_aj)
+                #Mostrar resultados
+                print(f"Longitud base requerida: {lreq_base:.2f} m")
+                print(f"Longitud ajustada requerida: {lreq_aj:.2f} m")
+                print(f"Longitud efectiva disponible: {leff:.2f} m")
+                print(f"Resultado: {mensaje}")
         case 2: 
             print("1. salomito")
             print("2. hamurguesa")
